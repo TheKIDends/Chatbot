@@ -1,0 +1,96 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - xin chào
+    - chào bạn
+    - hello bạn
+    - hi bạn
+    - Bạn ơi, cho mình hỏi
+    - bot ơi
+    - cho mình hỏi chút
+    - hey
+    - mình có vài câu hỏi
+    - có ai giúp mình không
+    - bạn ơi
+    - anh ơi
+    - chị ơi
+    - cháu ơi
+    - có ai ở đây không?
+- intent: goodbye
+  examples: |
+    - hẹn gặp lại
+    - good bye
+    - bye bye
+    - tạm biệt bạn
+    - tạm biệt bot nhá
+    - pp
+- intent: ask_ability
+  examples: |
+    - bạn có thể làm những gì nhỉ
+    - bạn có chức năng gì?
+    - bạn giúp gì được mình không?
+    - bạn có thể giúp gì cho mình?
+    - bạn biết làm gì?
+    - bạn hỗ trợ mình như thế nào?
+    - cho mình xem các chức năng của bạn
+- intent: thankyou
+  examples: |
+    - cảm ơn bạn nhá
+    - thanks bạn nha
+    - cảm ơn nha
+    - good job
+    - thank you
+    - cảm ơn bot nha
+    - thanks bot
+    - cảm ơn
+    - thank you so much
+    - great! Thanks
+    - ok
+    - okii
+    - ukm
+    - uk
+    - oke
+    - Ô kê
+- intent: praise
+  examples: |
+    - bot giỏi quá
+    - great
+    - awesome
+    - bot làm tốt lắm
+    - ui giỏi thế
+    - bot thông minh
+    - đẹp trai đấy
+    - Ênm đệnp léăm
+- intent: decry
+  examples: |
+    - quá tệ
+    - ngu ngốc
+    - chả biết gì cả
+    - ngu thật
+    - dở ghê
+    - có thế mà cũng không biết
+    - kém cỏi
+    - non
+    - gà vl
+- intent: ask_for_general_eye_examination_service
+  examples: |
+    - dịch vụ khám mắt tổng quát
+- intent: ask_for_getting_ready_to_go_to_hospital
+  examples: |
+    - khi đi khám cần những gì
+- intent: ask_for_cost_of_general_examination_service
+  examples: |
+    - chi phí dịch vụ khám tổng quát là bao nhiêu vậy
+- intent: ask_for_old_enough_for_refractive_surgery
+  examples: |
+    -  bao nhiêu tuổi thì có thể phẫu thuật khúc xạ
+- intent: ask_for_method_for_nearsighted
+  examples: |
+    -  cận thị thì phẫu thuật gì
+- intent: ask_for_safe_method_for_refractive_surgery
+  examples: |
+    -  phương pháp nào là an toàn nhất
+- intent: ask_for_recovery_time_after_refractive_surgery
+  examples: |
+    -  phẫu thuật xong hồi phục mất bao lâu

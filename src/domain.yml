@@ -1,0 +1,112 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- fallback:
+    use_entities: true
+- action_default_fallback:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- ask_ability:
+    use_entities: true
+- thankyou:
+    use_entities: true
+- praise:
+    use_entities: true
+- decry:
+    use_entities: true
+- ask_for_general_eye_examination_service:
+    use_entities: true
+- ask_for_getting_ready_to_go_to_hospital:
+    use_entities: true
+- ask_for_cost_of_general_examination_service:
+    use_entities: true
+- ask_for_old_enough_for_refractive_surgery:
+    use_entities: true
+- ask_for_method_for_nearsighted:
+    use_entities: true
+- ask_for_safe_method_for_refractive_surgery:
+    use_entities: true
+- ask_for_recovery_time_after_refractive_surgery:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_fallback:
+  - text: '...'
+  utter_greet:
+  - text: Bệnh viện mắt Ánh sáng xin chào, em có thể giúp được gì cho anh/chị.
+  utter_sorry:
+  - text: '...'
+  utter_noworries:
+  - text: '...'
+  utter_show_ability:
+  - text: '...'
+  utter_happy:
+  - text: '...'
+  utter_goodbye:
+  - text: '...'
+  utter_rep_for_general_eye_examination_service:
+  - text: |-
+      Dịch vụ khám mắt tổng quát tại bệnh viện mắt Ánh sáng gồm các dịch vụ khám chuyên sâu, các xét nghiệm chuẩn đoán hình ảnh quan trọng như chụp hình đáy mắt, siêu âm mắt,... 
+      Anh/chị có thể xem thêm chi tiết tại link: [*Khám mắt toàn diện*](https://www.matsaigon.com/kham-mat-toan-dien/).
+  utter_rep_for_getting_ready_to_go_to_hospital:
+  - text: |-
+      Khi đi khám anh/chị vui lòng đến một trong các [cơ sở của hệ thống bệnh viện](https://www.matsaigon.com/ve-chung-toi/he-thong-benh-vien/), tại quầy lễ tân anh/chị sẽ được hướng dẫn cụ thể. 
+      Ngoài ra để không phải chờ đợi lâu, anh/chị có thể đặt lịch trước dịch vụ tại link: [*Đặt lịch khám bệnh*](https://www.matsaigon.com/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjM4NzAiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D).
+  utter_rep_for_cost_of_general_examination_service:
+  - text: Đối với dịch vụ khám tổng quát, trọn gói dịch vụ tại bệnh viện chưa bao gồm chi phí thuốc thang là 2tr500k, ngoài ra khi anh/chị có nhu cầu làm thêm các xét nghiệm không được bao gồm trong gói dịch vụ thì chi phí sẽ được tính riêng ạ.
+  utter_service:
+  - text: |-
+      Các dịch vụ gồm có: 
+      - Khám mắt
+      - Phẫu thuật ghép giác mạc
+      - Phẫu thuật khúc xạ
+      - Phẫu thuật đục thủy tinh thể
+      - Tạo hình thẩm mỹ:
+          + Phẫu thuật sụp mí 
+          + Phẫu thuật mí đôi
+          + Phẫu thuật bọng mỡ mắt
+          + Phẫu thuật hở mi
+      - Nhãn nhi, điều trị lác lé:
+          + Kính áp tròng chỉnh hình giác mạc
+          + Phẫu thuật lác/lé
+          + Nhược thị
+      - Phẫu thuật cườm nước
+      - Phẫu thuật cườm khô
+      - Điều trị cận thị/ viễn thị/ loạn thị
+      - Phẫu thuật khúc xạ
+  utter_ans_for_old_enough_for_refractive_surgery:
+  - text: Để có thể phẫu thuật khúc xạ cần đủ 18 tuổi trở lên để đảm bảo nhãn cầu có cấu trúc tương đối ổn định. Ngoài ra còn có một số yêu cầu khác như ổn định độ khúc xạ, không bị mắc các bệnh về mắt, giác mạc không bị sẹo, ...
+  utter_rep_for_method_for_nearsighted:
+  - text: 'Hiện nay có rất nhiều phương pháp phẫu thuật khúc xạ hiện đại, tại bệnh viện mắt Ánh sáng bạn có thể lựa chọn các phương pháp như: phẫu thuật lasik, phương pháp relex smile (phương pháp tiên tiến nhất hiện nay), phương pháp femtosecond lasik, ...'
+  utter_rep_for_safe_method_for_refractive_surgery:
+  - text: Phương pháp relex smile hiện là phương pháp an toàn và tiên tiến nhất hiện nay, đây cũng là phương pháp được rất nhiều bệnh nhận lựa chọn tại bệnh viện mắt Ánh sáng.
+  utter_rep_for_recovery_time_after_refractive_surgery:
+  - text: Hầu hết các phẫu thuật trên thời gian hồi phục khá nhanh, bệnh nhân chỉ cần nghỉ ngơi trong vòng 1-2 tiếng và thực hiện theo chỉ dẫn của bác sĩ sau khi phẫu thuật như không gội đầu trong vòng 24 tiếng, không xem ti vi, điện thoại quá nhiều, ...
+actions:
+- utter_greet
+- utter_sorry
+- utter_noworries
+- utter_show_ability
+- utter_fallback
+- utter_happy
+- utter_goodbye
+- utter_ans_for_general_eye_examination_service
+- utter_ans_for_getting_ready_to_go_to_hospital
+- utter_ans_for_cost_of_general_examination_services
+- utter_service
+- utter_ans_for_old_enough_for_refractive_surgery
+- utter_rep_for_method_for_nearsighted
+- utter_rep_for_safe_method_for_refractive_surgery
+- utter_rep_for_recovery_time_after_refractive_surgery
+forms: {}
+e2e_actions: []
