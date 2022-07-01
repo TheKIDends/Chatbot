@@ -15,8 +15,6 @@ intents:
     use_entities: true
 - goodbye:
     use_entities: true
-- ask_ability:
-    use_entities: true
 - thankyou:
     use_entities: true
 - praise:
@@ -37,23 +35,29 @@ intents:
     use_entities: true
 - ask_for_recovery_time_after_refractive_surgery:
     use_entities: true
+- ask_for_old_enough_for_cataract_surgery:
+    use_entities: true
+- ask_for_safe_method_for_cataract_surgery:
+    use_entities: true
+- ask_for_recovery_time_after_cataract_surgery:
+    use_entities: true
+- service:
+    use_entities: true
 entities: []
 slots: {}
 responses:
   utter_fallback:
-  - text: '...'
+  - text: Xin lỗi, em vẫn chưa hiểu ý anh/ chị muốn nói.
   utter_greet:
   - text: Bệnh viện mắt Ánh sáng xin chào, em có thể giúp được gì cho anh/chị.
   utter_sorry:
-  - text: '...'
+  - text: Xin lỗi vì không đáp ứng được nhu cầu của anh/ chị.
   utter_noworries:
-  - text: '...'
-  utter_show_ability:
-  - text: '...'
+  - text: Bệnh viện mắt Ánh sáng luôn sẵn lòng giúp đỡ anh/ chị.
   utter_happy:
-  - text: '...'
+  - text: Bệnh viện mắt Ánh sáng luôn sẵn lòng giúp đỡ anh/ chị.
   utter_goodbye:
-  - text: '...'
+  - text: Cảm ơn anh/ chị đã quan tâm đến dịch vụ của bệnh viện mắt Ánh sáng.
   utter_rep_for_general_eye_examination_service:
   - text: |-
       Dịch vụ khám mắt tổng quát tại bệnh viện mắt Ánh sáng gồm các dịch vụ khám chuyên sâu, các xét nghiệm chuẩn đoán hình ảnh quan trọng như chụp hình đáy mắt, siêu âm mắt,... 
@@ -84,27 +88,32 @@ responses:
       - Phẫu thuật cườm khô
       - Điều trị cận thị/ viễn thị/ loạn thị
       - Phẫu thuật khúc xạ
-  utter_ans_for_old_enough_for_refractive_surgery:
+  utter_rep_for_old_enough_for_refractive_surgery:
   - text: Để có thể phẫu thuật khúc xạ cần đủ 18 tuổi trở lên để đảm bảo nhãn cầu có cấu trúc tương đối ổn định. Ngoài ra còn có một số yêu cầu khác như ổn định độ khúc xạ, không bị mắc các bệnh về mắt, giác mạc không bị sẹo, ...
   utter_rep_for_method_for_nearsighted:
   - text: 'Hiện nay có rất nhiều phương pháp phẫu thuật khúc xạ hiện đại, tại bệnh viện mắt Ánh sáng bạn có thể lựa chọn các phương pháp như: phẫu thuật lasik, phương pháp relex smile (phương pháp tiên tiến nhất hiện nay), phương pháp femtosecond lasik, ...'
   utter_rep_for_safe_method_for_refractive_surgery:
   - text: Phương pháp relex smile hiện là phương pháp an toàn và tiên tiến nhất hiện nay, đây cũng là phương pháp được rất nhiều bệnh nhận lựa chọn tại bệnh viện mắt Ánh sáng.
   utter_rep_for_recovery_time_after_refractive_surgery:
-  - text: Hầu hết các phẫu thuật trên thời gian hồi phục khá nhanh, bệnh nhân chỉ cần nghỉ ngơi trong vòng 1-2 tiếng và thực hiện theo chỉ dẫn của bác sĩ sau khi phẫu thuật như không gội đầu trong vòng 24 tiếng, không xem ti vi, điện thoại quá nhiều, ...
+  - text: Hầu hết các loại phẫu thuật có thời gian hồi phục khá nhanh, bệnh nhân chỉ cần nghỉ ngơi trong vòng 1-2 tiếng và thực hiện theo chỉ dẫn của bác sĩ sau khi phẫu thuật như không gội đầu trong vòng 24 tiếng, không xem ti vi, điện thoại quá nhiều, không bơi trong 1 tháng, ...
+  utter_rep_for_old_enough_for_cataract_surgery:
+  - text: Không có độ tuổi quy định để có thể phẫu thuật đục thủy tinh thể. Tuy nhiên, còn có một số yêu cầu khác như không có các bệnh toàn thân cấp tính, bệnh nhân không có các viêm nhiễm cấp tính tại mắt, ...
+  utter_rep_for_safe_method_for_cataract_surgery:
+  - text: Phương pháp phẫu thuật [phacoemusification](https://www.matsaigon.com/phau-thuat-phaco/) (kỹ thuật mổ Phaco) là một phương pháp phẫu thuật chữa bệnh đục thủy tinh thể thể an toàn, hiệu quả và tiên tiến nhất hiện nay.
+  utter_rep_for_recovery_time_after_cataract_surgery:
+  - text: Hầu hết các loại phẫu thuật có thời gian hồi phục khá nhanh, bệnh nhân chỉ cần nghỉ ngơi trong vòng 1-2 tiếng và thực hiện theo chỉ dẫn của bác sĩ sau khi phẫu thuật như không gội đầu trong vòng 24 tiếng, không xem ti vi, điện thoại quá nhiều, không bơi trong 1 tháng, ...
 actions:
 - utter_greet
 - utter_sorry
 - utter_noworries
-- utter_show_ability
 - utter_fallback
 - utter_happy
 - utter_goodbye
-- utter_ans_for_general_eye_examination_service
-- utter_ans_for_getting_ready_to_go_to_hospital
-- utter_ans_for_cost_of_general_examination_services
+- utter_rep_for_general_eye_examination_service
+- utter_rep_for_getting_ready_to_go_to_hospital
+- utter_rep_for_cost_of_general_examination_services
 - utter_service
-- utter_ans_for_old_enough_for_refractive_surgery
+- utter_rep_for_old_enough_for_refractive_surgery
 - utter_rep_for_method_for_nearsighted
 - utter_rep_for_safe_method_for_refractive_surgery
 - utter_rep_for_recovery_time_after_refractive_surgery
